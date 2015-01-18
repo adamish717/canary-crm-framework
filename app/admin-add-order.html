@@ -52,82 +52,56 @@
   </div>
 </div>
 
-    <div class="container">
-      <div class="row clearfix">
-        <div class="col-md-12 column">
-          <div class="jumbotron">
-            <h1>
-              Welcome back
-            </h1><br>
-            <p>
-              {client_company_name}
-            </p>
-            <p>
-              {client_company_address}
-            </p>
-            <p>
-              {client_email}
-            </p>
-            <p>
-              {client_website}
-            </p>
-            <p>
-              {client_phone}
-            </p>
-          </div>
-          <table class="table table-bordered table-hover">
-            <thead>
-              <tr>
-                <th>Job ID</th>
-                <th>Order Date</th>
-                <th>Job Name</th>
-                <th>Status</th>
-                <th>Invoice</th>
-                <th>Details</th>
-              </tr>
-            </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>01/04/2012</td>
-                  <td>Steve Cards</td>
-                  <td>Ordered</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-                </tr>
-                  <td>1</td>
-                  <td>01/04/2012</td>
-                  <td>Maurice Cards</td>
-                  <td>Ordered</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-                </tr>
-                  <td>2</td>
-                  <td>01/04/2012</td>
-                  <td>Brochures</td>
-                  <td>Shipped {tracking link}</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-                </tr>
-                  <td>3</td>
-                  <td>01/04/2012</td>
-                  <td>Flyers</td>
-                  <td>Shipped {tracking link}</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-                </tr>
-                  <td>4</td>
-                  <td>01/04/2012</td>
-                  <td>Booklet</td>
-                  <td>Shipped {tracking link}</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-              </tr>
-            </tbody>
-          </table>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h3>
+        Add Order
+      </h3><br>
+      <form role="form">
+        <div class="form-group">
+          <label>Job Name</label>
+          <input type="text" class="form-control"/>
+          <label>Product</label>
+          <input type="text" class="form-control"/>
+          <label>Order Date (datepicker)</label>
+          <input type="text" class="form-control"/>
+          <label>Pieces/Quantity</label>
+          <input type="text" class="form-control"/>
+          <label>Job Status (dropdown menu)</label>
+          <input type="text" class="form-control"/>
+          <label>Price (and/or link to invoice)</label>
+          <input type="text" class="form-control"/>
+          <label>Tracking (tracking URL)</label>
+          <input type="text" class="form-control"/>
+          <label>Invoice (if not presented above)</label>
+          <input type="text" class="form-control"/>
         </div>
-      </div>
+        <h1>Files</h1>
+        <div class="form-group">
+          <label>Image Category (select from dropdown - front, back, front mask, etc)</label>
+          <input type="text" class="form-control"/>
+          <label for="exampleInputFile">Proof</label><input type="file" id="exampleInputFile" />
+          <label for="exampleInputFile">Print-Ready File</label><input type="file" id="exampleInputFile" /><br>
+          <label>Image Category (select from dropdown - front, back, front mask, etc)</label>
+          <input type="text" class="form-control"/>
+          <label for="exampleInputFile">Proof</label><input type="file" id="exampleInputFile" />
+          <label for="exampleInputFile">Print-Ready File</label><input type="file" id="exampleInputFile" /><br>
+          <label>Image Category (select from dropdown - front, back, front mask, etc)</label>
+          <input type="text" class="form-control"/>
+          <label for="exampleInputFile">Proof</label><input type="file" id="exampleInputFile" />
+          <label for="exampleInputFile">Print-Ready File</label><input type="file" id="exampleInputFile" />
+          <br>
+          <label>Image Category (select from dropdown - front, back, front mask, etc)</label>
+          <input type="text" class="form-control"/>
+          <label for="exampleInputFile">Proof</label><input type="file" id="exampleInputFile" />
+          <label for="exampleInputFile">Print-Ready File</label><input type="file" id="exampleInputFile" />
+        <br>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
+  </div>
+</div>
 
 
     <!-- build:js(.) scripts/vendor.js -->

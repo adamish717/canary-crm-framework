@@ -52,82 +52,106 @@
   </div>
 </div>
 
-    <div class="container">
-      <div class="row clearfix">
-        <div class="col-md-12 column">
-          <div class="jumbotron">
-            <h1>
-              Welcome back
-            </h1><br>
-            <p>
-              {client_company_name}
-            </p>
-            <p>
-              {client_company_address}
-            </p>
-            <p>
-              {client_email}
-            </p>
-            <p>
-              {client_website}
-            </p>
-            <p>
-              {client_phone}
-            </p>
-          </div>
-          <table class="table table-bordered table-hover">
-            <thead>
-              <tr>
-                <th>Job ID</th>
-                <th>Order Date</th>
-                <th>Job Name</th>
-                <th>Status</th>
-                <th>Invoice</th>
-                <th>Details</th>
-              </tr>
-            </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>01/04/2012</td>
-                  <td>Steve Cards</td>
-                  <td>Ordered</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-                </tr>
-                  <td>1</td>
-                  <td>01/04/2012</td>
-                  <td>Maurice Cards</td>
-                  <td>Ordered</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-                </tr>
-                  <td>2</td>
-                  <td>01/04/2012</td>
-                  <td>Brochures</td>
-                  <td>Shipped {tracking link}</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-                </tr>
-                  <td>3</td>
-                  <td>01/04/2012</td>
-                  <td>Flyers</td>
-                  <td>Shipped {tracking link}</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-                </tr>
-                  <td>4</td>
-                  <td>01/04/2012</td>
-                  <td>Booklet</td>
-                  <td>Shipped {tracking link}</td>
-                  <td><a href="#">{invoice_link}</a></td>
-                  <td><a href="/details.html">{details_link}</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <a href="admin-add-client.html"><button type="button" class="btn btn-primary btn-lg">AddNewClient</button></a>
     </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>
+              Client Name
+            </th>
+            <th>
+              Last Ordered
+            </th>
+            <th>
+              Total Order Value
+            </th>
+            <th>
+              Add Client Order
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Name1
+            </td>
+            <td>
+              01/04/2012
+            </td>
+            <td>
+              $500
+            </td>
+            <td>
+              <a href="/admin-add-order.html"><img src="../images/add-order.png" /></a>
+            </td>
+          </tr>
+            <td>
+              Name2
+            </td>
+            <td>
+              <span>01/04/2012</span>
+            </td>
+            <td>
+              <span>$500</span>
+            </td>
+            <td>
+              <a href="/admin-add-order.html"><img src="../images/add-order.png" /></a>
+            </td>
+          </tr>
+            <td>
+              Name3
+            </td>
+            <td>
+              <span>01/04/2012</span>
+            </td>
+            <td>
+              <span>$500</span>
+            </td>
+            <td>
+              <a href="/admin-add-order.html"><img src="../images/add-order.png" /></a>
+            </td>
+          </tr>
+            <td>
+              Name4
+            </td>
+            <td>
+              <span>01/04/2012</span>
+            </td>
+            <td>
+              <span>$500</span>
+            </td>
+            <td>
+              <a href="/admin-add-order.html"><img src="../images/add-order.png" /></a>
+            </td>
+          </tr>
+            <td>
+              Name5
+            </td>
+            <td>
+              <span>01/04/2012</span>
+            </td>
+            <td>
+              <span>$500</span>
+            </td>
+            <td>
+              <a href="/admin-add-order.html"><img src="../images/add-order.png" /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 
     <!-- build:js(.) scripts/vendor.js -->
