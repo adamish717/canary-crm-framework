@@ -7,124 +7,125 @@
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
+
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
   <body>
+
     <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<div class="container">
-  <div class="row clearfix">
-    <div class="col-md-12 column">
-      <nav class="navbar navbar-default" role="navigation">
-          <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Canary Logo</a>
-          </div>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-md-12 column">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Canary Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                  <li>
-                      <a href="index.html">Client-Overview</a>
-                  </li>
-                  <li>
-                      <a href="client-details.html">Client Details</a>
-                  </li>
-                  <li>
-                      <a href="admin-client-list.html">Admin Client List</a>
-                  </li>
-                  <li>
-                      <a href="admin-add-client.html">Admin Add Client</a>
-                  </li>
-                  <li>
-                      <a href="admin-add-order.html">Admin Add Order</a>
-                  </li>
+                <li>
+                  <a href="index.html">Client-Overview</a>
+                </li>
+                <li>
+                  <a href="client-details.html">Client Details</a>
+                </li>
+                <li>
+                  <a href="admin-client-list.html">Admin Client List</a>
+                </li>
+                <li>
+                  <a href="admin-add-client.html">Admin Add Client</a>
+                </li>
+                <li>
+                  <a href="admin-add-order.html">Admin Add Order</a>
+                </li>
               </ul>
-          </div>
-      </nav>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row clearfix">
-    <div class="col-md-12 column">
-      <div class="jumbotron">
-        <h1>
-          Order Details
-        </h1>
+            </div>
+          </nav>
+        </div>
       </div>
-      <ul class="list-unstyled">
-        <li>
-          {client_jobname}
-        </li>
-        <li>
-          {product_description}
-        </li>
-        <li>
-          Date Ordered: {order_date}
-        </li>
-        <li>
-          Quantity: {order_quantity}
-        </li>
-        <li>
-          Status: {job_status}
-        </li>
-        <li>
-          Price: {link_to_invoice}
-        </li>
-        <li>
-          Tracking: {tracking_link}
-        </li>
-      </ul>
     </div>
-  </div>
-  <div class="row clearfix">
-    <div class="col-md-12 column">
-      <h3 class="text-left">
-        Proofs:
-      </h3>
-      <div class="tabbable" id="tabs-990806">
-        <ul class="nav nav-tabs">
-          <li class="active">
-            <a href="#panel-911316" data-toggle="tab">Card1 FRONT</a>
-          </li>
-          <li>
-            <a href="#panel-473201" data-toggle="tab">Card1 BACK</a>
-          </li>
-          <li class="active">
-            <a href="#panel-91131" data-toggle="tab">Card2 FRONT</a>
-          </li>
-          <li class="active">
-            <a href="#panel-9113" data-toggle="tab">Card2 BACK</a>
-          </li>
-          <li class="active">
-            <a href="#panel-911" data-toggle="tab">Card3 FRONT</a>
-          </li>
-          <li class="active">
-            <a href="#panel-91" data-toggle="tab">Card3 BACK</a>
-          </li>
 
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane active" id="panel-911316">
-            <p>{PROOF_IMAGE1}</p>
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-md-12 column">
+          <div class="jumbotron">
+            <h1>
+            Order Details
+            </h1>
           </div>
-          <div class="tab-pane" id="panel-473201">
-            <p>{PROOF_IMAGE2}</p>
+          <ul class="list-unstyled">
+            <li>
+              {client_jobname}
+            </li>
+            <li>
+              {product_description}
+            </li>
+            <li>
+              Date Ordered: {order_date}
+            </li>
+            <li>
+              Quantity: {order_quantity}
+            </li>
+            <li>
+              Status: {job_status}
+            </li>
+            <li>
+              Price: {link_to_invoice}
+            </li>
+            <li>
+              Tracking: {tracking_link}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col-md-12 column">
+          <h3 class="text-left">
+          Proofs:
+          </h3>
+          <div class="tabbable" id="tabs-990806">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#panel-911316" data-toggle="tab">Card1 FRONT</a>
+              </li>
+              <li>
+                <a href="#panel-473201" data-toggle="tab">Card1 BACK</a>
+              </li>
+              <li class="active">
+                <a href="#panel-91131" data-toggle="tab">Card2 FRONT</a>
+              </li>
+              <li class="active">
+                <a href="#panel-9113" data-toggle="tab">Card2 BACK</a>
+              </li>
+              <li class="active">
+                <a href="#panel-911" data-toggle="tab">Card3 FRONT</a>
+              </li>
+              <li class="active">
+                <a href="#panel-91" data-toggle="tab">Card3 BACK</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="panel-911316">
+                <p>{PROOF_IMAGE1}</p>
+              </div>
+              <div class="tab-pane" id="panel-473201">
+                <p>{PROOF_IMAGE2}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -134,31 +135,31 @@
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <!-- build:js(.) scripts/plugins.js -->
-        <script src="bower_components/bootstrap/js/affix.js"></script>
-        <script src="bower_components/bootstrap/js/alert.js"></script>
-        <script src="bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="bower_components/bootstrap/js/button.js"></script>
-        <script src="bower_components/bootstrap/js/popover.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="bower_components/bootstrap/js/affix.js"></script>
+    <script src="bower_components/bootstrap/js/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/modal.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/button.js"></script>
+    <script src="bower_components/bootstrap/js/popover.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-</body>
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
